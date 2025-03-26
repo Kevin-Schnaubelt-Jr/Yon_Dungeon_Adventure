@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Dungeon Master</title>
+</head>
+<body>
+    <div id="header">
+        <audio id="bg-music" src="https://www.dropbox.com/scl/fi/g1v17y59rp3zkrgyjvsyf/King-s-Field-IV-Music-20-Dark-Reality.mp3?rlkey=k9ujbhck6gbx307nu4p48im5x&st=4c1n7mxr&raw=1" loop></audio>
+        <button id="music-button" onclick="toggleMusic()">SET THE MOOD</button> 
+    </div>
+
+    <div id="content">
+        <div id="torch-div">
+            <img src="https://www.picgifs.com/graphics/t/torch/graphics-torch-166482.gif" class="torch" alt="">
+            <h1>YE FIND YESELF IN YON DUNGEON</h1>
+            <img src="https://www.picgifs.com/graphics/t/torch/graphics-torch-166482.gif" class="torch" alt="">
+        </div>
+        <div id="flask-div">
+            <h2>
+                YE SEE A FLASK
+            </h2>
+        </div>
+        <div id="exits-div">
+            <h2>
+                Obvious exits are:
+            </h2>
+            <div id="exit-cards-container">
+                <div class="exit-card">
+                    <h1>North</h1>
+                    <img class="card-img" src="https://www.picgifs.com/graphics/d/doors/graphics-doors-911135.gif" alt="">
+                    <button class="go-button" value="north">Go</button>
+                </div>
+                <div class="exit-card">
+                    <h1>South</h1>
+                    <img class="card-img" src="https://www.picgifs.com/graphics/d/doors/graphics-doors-911135.gif" alt="">
+                    <button class="go-button" value="south">Go</button>
+                </div>
+                <div class="exit-card">
+                    <h1>Dennis</h1>
+                    <img class="card-img" src="https://www.picgifs.com/graphics/d/doors/graphics-doors-911135.gif" alt="">
+                    <button class="go-button" value="dennis">Go</button>
+                </div>
+            </div>
+            <div id="flask-card-container">
+                <div class="exit-card">
+                    <h1>Get Ye Flask</h1>
+                    <img class="card-img" src="https://www.picgifs.com/glitter-gifs/b/bottles/picgifs-bottles-0352206.gif" alt="">
+                    <button class="go-button" value="flask">Get</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
