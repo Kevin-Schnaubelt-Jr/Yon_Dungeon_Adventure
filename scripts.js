@@ -58,11 +58,21 @@ function dennisAventure() {
 }
 
 function flaskAdventure() {
-    if (flaskCount >= flaskResponseArray.length) {
-        flaskCount = 4;
-    }
-    alert(flaskResponseArray[flaskCount]);
     flaskCount++;
+    
+    if (flaskCount <= flaskResponseArray.length){
+        alert(flaskResponseArray[flaskCount - 1]);
+    }
+    else if (flaskCount === 10) {
+        if (confirm("OK FINE. You get ye flask. Do you want to drink from it?")) {
+            alert("You drink from the flask. It was poison. You die. Game over.");
+        } else {
+            alert("Nah nah nah, you're drinking this flask. You wanted it so bad, you're drinking it. You drink the flask and die because it was poison. Game over.");
+        }
+    }
+    else {
+        alert(flaskResponseArray[4]);
+    }
 }
 
 
